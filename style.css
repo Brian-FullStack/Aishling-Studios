@@ -190,6 +190,7 @@ img {
 .btn-primary {
     background-color: #FA9F42;
     color: #FFF9FB;
+    border: 2px solid #FA9F42;
     position: absolute;
     z-index: 2;
     bottom: 20%;
@@ -199,9 +200,10 @@ img {
     box-shadow: 4px 4px 8px #181119;
     font-size: 20px;
     font-weight: 600;
+    transition: all .4s ease;
 }
 
-.btn-scondary {
+.btn-secondary {
     background-color: #181119;
     color: #FA9F42;
     border: 2px solid #FA9F42;
@@ -211,16 +213,23 @@ img {
     box-shadow: 4px 4px 8px #181119;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 50px;
+    transition: all .4s ease;
 }
 
 .btn-primary:hover {
     border: 2px solid #FA9F42;
     background-color: #FFF9FB;
     color: #FA9F42;
+    transform: scale(110%)
 }
 
-.first-section {
+.btn-secondary:hover {
+    background-color: #221b23;
+    color: #FFF9FB;
+    transform: scale(110%)
+}
+
+.section-dark {
     background-color: #181119;
     margin-top: 0;
     padding-bottom: 30px;
@@ -254,7 +263,89 @@ h2 {
     font-size: 36px;
 }
 
-.first-section-copy {
+.first-section-copy,
+.second-section-copy {
     margin: 0 auto;
     font-size: 24px;
+}
+
+.hero-button,
+.site-btn-secondary {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-light {
+    background-color: #FFF9FB;
+    margin-top: 0;
+    padding: 36px 40px 30px;
+}
+
+
+
+.heading {
+    margin-bottom: 16px;
+}
+
+.studio-section {
+    background-color: #181119;
+    color: #FFF9FB;
+    text-align: center;
+    padding-top: 36px;
+}
+
+
+.grid-gallery {
+    margin: 0 auto;
+    padding: 16px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    gap: 16px;
+}
+
+.grid-square {
+    grid-column: span 2;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border-bottom-right-radius: 25px;
+}
+
+#img1 {
+    background-image: url(assets/images/control_room_at_digital_mixer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#img2 {
+    background-image: url(assets/images/masteringTrack.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#img3 {
+    background-image: url(assets/images/guitars001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#img4 {
+    background-image: url(assets/images/Studio1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#img5 {
+    background-image: url(assets/images/mixingRoom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#img6 {
+    background-image: url(assets/images/piano.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
