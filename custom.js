@@ -23,6 +23,11 @@ navClose.addEventListener("click", function () {
     navElement.classList.add("hide");
 })
 
+navElement.addEventListener('click', function () {
+    navElement.classList.remove("show");
+    navElement.classList.add("hide");
+})
+
 cardExpandBaisc.addEventListener('click', function () {
     cardExpandBaisc.style.display = "none";
     cardCloseBasic.style.display = "block";
