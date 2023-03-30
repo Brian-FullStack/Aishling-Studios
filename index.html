@@ -26,10 +26,10 @@
         <a class="nav-close" id="nav-close">
             <i class="fas fa-times"></i>
         </a>
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">The Studio</a>
-        <a href="#" class="nav-link">Rates</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#container" class="nav-link">Home</a>
+        <a href="#theStudio" class="nav-link">The Studio</a>
+        <a href="#rates" class="nav-link">Rates</a>
+        <a href="#contactArea" class="nav-link">Contact</a>
         <div class="nav-social-links">
             <span>
                 <i class="fab fa-facebook"></i>
@@ -42,7 +42,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="container">
 
         <div class="overlay"></div>
         <div class="image">
@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    <div class="about-us section-light">
+    <div class="about-us section-light" id="aboutUs">
         <div class="second-section-copy">
             <h2 class="heading">About Us</h2>
             <p>For over 20 years, our cozy countryside recording studio has been a haven for musicians, voice-over
@@ -122,7 +122,7 @@
         </div>
     </div>
 
-    <div class="studio-section">
+    <div class="studio-section" id="theStudio">
         <h2 class="heading">The Studio</h2>
 
         <div class="grid-gallery">
@@ -158,7 +158,7 @@
 
     </div>
 
-    <div class="rates-section">
+    <div class="rates-section" id="rates">
         <h2 class="heading">Rates</h2>
 
         <div class="rates-area">
@@ -330,6 +330,48 @@
             </div>
         </div>
     </div>
+
+    <div class="contact-area" id="contactArea">
+        <div class="contact-us-copy">
+            <h1 class="heading">Contact Us</h1>
+
+            <p>You can contact me at any time by phone or email. If you want to see the studio and discuss recording
+                options
+                I will give you a consultation for free.</p>
+        </div>
+
+        <form action="#">
+            <input type="text" class="input-width" placeholder="Full Name" required>
+            <input type="email" class="input-width" placeholder="Email" required>
+            <select name="" id="" class="input-width" aria-placeholder="Which best describes your project?" required>
+                <option value="">Which of these best describes your project?...</option>
+                <option value="personal-passion-project ">Personal Passion Project</option>
+                <option value="solo ">Solo Album/EP</option>
+                <option value="band">Band Album/EP</option>
+                <option value="audio-book">Audio Book</option>
+                <option value="ep">Voiceover Work</option>
+                <option value="post-production">Post Production</option>
+            </select>
+            <select name="" id="" class="input-width" aria-placeholder="Select a package" required>
+                <option value="">Select a package...</option>
+                <option value="standard">Standard Package</option>
+                <option value="premium">Premium Package</option>
+                <option value="basic">Basic Package</option>
+            </select>
+
+            <textarea class="input-width" cols="30" rows="10" placeholder="Tell us a little about your project"
+                required></textarea>
+
+            <div class="site-btn-secondary">
+                <button type="submit" class="btn-secondary">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="section-dark">
+        <p>All rights reserved</p>
+        <p>Designed by <a>Brian.FullStack</a></p>
+    </footer>
 
     <!-- FOnt Awsome CDN -->
     <script src="https://kit.fontawesome.com/970bd2bd30.js" crossorigin="anonymous"></script>
