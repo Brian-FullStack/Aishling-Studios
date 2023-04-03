@@ -388,8 +388,7 @@ h2 {
     align-items: center;
     transition: all 2s ease;
     transform-origin: 0%;
-    animation: keywordMove 20s infinite;
-    animation-timing-function: linear;
+    animation: keywordMove 20s infinite linear;
 }
 
 /* .keywords:hover {
@@ -398,24 +397,13 @@ h2 {
 
 @keyframes keywordMove {
     0% {
-        transform: translateX(-20%);
-    }
-
-
-    25% {
-        transform: translateX(20%);
-    }
-
-    50% {
-        transform: translateX(50%);
-    }
-
-    75% {
-        transform: translateX(20%);
+        transform: translateX(100%);
+        overflow: hidden;
     }
 
     100% {
-        transform: translateX(-20%);
+        transform: translateX(-100%);
+        overflow-x: hidden;
     }
 
 }
