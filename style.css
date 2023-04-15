@@ -395,7 +395,7 @@ h2 {
     transform: translateX(25%);
 } */
 
-@keyframes keywordMove {
+/* @keyframes keywordMove {
     0% {
         transform: translateX(100%);
         overflow: hidden;
@@ -406,7 +406,7 @@ h2 {
         overflow-x: hidden;
     }
 
-}
+} */
 
 .rates-section {
     background-color: #FFF9FB;
@@ -513,4 +513,105 @@ form {
     border-radius: 8px;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
+}
+
+@media (min-width: 600px) {
+
+    img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        background-color: #181119;
+    }
+
+    .image {
+        grid-column-start: 5;
+        grid-column-end: 8;
+    }
+
+    img {
+        background-size: cover;
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
+
+    .overlay {
+        background-image: linear-gradient(90deg, #181119, #181119, transparent);
+    }
+
+    .hero-text {
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+
+    .first-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr;
+    }
+
+    .hero-button {
+        grid-column-start: 2;
+        margin: 16px;
+    }
+
+    .about-us {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .studio-section {
+        display: grid;
+    }
+
+    .grid-gallery {
+        display: grid;
+        grid-template-columns: repeat(3);
+        grid-template-rows: 1fr, 1fr, 1fr;
+    }
+
+    /* .grid-square {
+        /* grid-column: span 1;
+        /* height: 200px;
+        width: 200px;
+    } */
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        background-color: #181119;
+    }
+
+    .image {
+        grid-column-start: 5;
+        grid-column-end: 8;
+    }
+
+    img {
+        background-size: cover;
+        grid-column-start: 9;
+        grid-column-end: 13;
+        margin-top: 36px;
+    }
+
+    .overlay {
+        background-image: linear-gradient(90deg, #181119, #181119, transparent);
+    }
+
+    .hero-text {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        font-size: 60px;
+    }
 }
