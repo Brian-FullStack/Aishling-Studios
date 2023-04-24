@@ -258,6 +258,12 @@ img {
     align-items: center;
 }
 
+.block {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 0.4s ease-out, transform 1s ease-out;
+}
+
 .circle i {
     color: #FFF9FB;
     font-size: 56px;
@@ -513,6 +519,11 @@ form {
     border-radius: 8px;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
+}
+
+.animation {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (min-width: 600px) {

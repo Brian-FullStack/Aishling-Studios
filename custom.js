@@ -66,3 +66,27 @@ cardClosePremium.addEventListener('click', function () {
     cardClosePremium.style.display = "none";
     packageBodyPremium.style.display = "none";
 })
+
+
+const observer = new IntersectionObserver( entries => {
+
+    entries.forEach(entry => {
+        const intersecting = entry.isIntersecting;
+
+        if (intersecting) {
+            addAnimation(entry.target);
+        }
+    })
+}, {
+    rootMargin: "-50px",
+    treshold: 1
+})
+
+const contentBlocks = document.querySelectorAll(".block");
+contentBlocks.forEach(block => {
+    observer.observe(block);
+});
+
+function addAnimation(block) {
+    block.classList.add("animation");
+}
